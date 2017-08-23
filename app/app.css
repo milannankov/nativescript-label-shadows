@@ -1,0 +1,24 @@
+﻿@import 'nativescript-theme-core/css/core.light.css';
+
+.button {
+    height: 34;
+    background-color: #aeea00;
+    color: #36505E;
+    border-color: #80B808;
+    border-width: 0.5;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    vertical-align: center;
+    horizontal-align: stretch;
+}
+
+.buttonLabel {
+    color: #36505E;
+    font-weight: bold;
+    font-size: 16;
+    font-family: "Roboto-Bold";
+    margin: 0;
+    padding: 0;
+    horizontal-align: center;
+    vertical-align: center;
+}

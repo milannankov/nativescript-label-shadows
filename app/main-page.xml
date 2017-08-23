@@ -1,0 +1,59 @@
+<!--
+The markup in NativeScript apps contains a series of user interface components, each
+of which NativeScript renders with a platform-specific iOS or Android native control.
+You can find a full list of user interface components you can use in your app at
+https://docs.nativescript.org/ui/components.
+-->
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page" loaded="onLoaded">
+    <!--
+    The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
+    http://docs.nativescript.org/ui/action-bar
+    -->
+    <Page.actionBar>
+        <ActionBar title="My App" icon="" class="action-bar">
+        </ActionBar>
+    </Page.actionBar>
+    <!--
+    The StackLayout stacks UI components on the screen—either vertically or horizontally.
+    In this case, the StackLayout does vertical stacking; you can change the stacking to
+    horizontal by applying a orientation="horizontal" attribute to the <StackLayout> element.
+    You can learn more about NativeScript layouts at
+    https://docs.nativescript.org/ui/layout-containers.
+
+    These components make use of several CSS class names that are part of the NativeScript
+    core theme, such as p-20, btn, h2, and text-center. You can view a full list of the
+    class names available for styling your app at https://docs.nativescript.org/ui/theme.
+    -->
+    <StackLayout class="p-20">
+
+        <Label text="Label shadows" class="h1 text-center"/>
+
+        <GridLayout rows="48" columns="*,*,*">  
+            <StackLayout id="button1" class="button" row="0" col="0">
+                <Label id="button1Label" class="buttonLabel" text="One" 
+                    horizontalAlignment="center" verticalAlignment="center"/>
+            </StackLayout>
+            <StackLayout id="button2" class="button" row="0" col="1" text="2">
+                <Label id="button2Label" class="buttonLabel" text="Two" 
+                    horizontalAlignment="center" verticalAlignment="center"/>
+            </StackLayout>
+            <StackLayout id="button3" class="button" row="0" col="2" text="3">
+                <Label id="button3Label" class="buttonLabel" text="Three"/>
+            </StackLayout>
+        </GridLayout>  
+<Label text="No shadows" class="h1 text-center"/>
+        <GridLayout rows="48" columns="*,*,*">  
+            <StackLayout id="keyboardButton1" class="button" row="0" col="0">
+                <Label id="keyboardButton1Label2" class="buttonLabel" text="One" 
+                    horizontalAlignment="center" verticalAlignment="center"/>
+            </StackLayout>
+            <StackLayout id="keyboardButton2" class="button" row="0" col="1" text="2">
+                <Label id="keyboardButton2Label2" class="buttonLabel" text="Two" 
+                    horizontalAlignment="center" verticalAlignment="center"/>
+            </StackLayout>
+            <StackLayout id="keyboardButton3" class="button" row="0" col="2" text="3">
+                <Label id="keyboardButton3Label2" class="buttonLabel" text="Three"/>
+            </StackLayout>
+        </GridLayout>  
+    </StackLayout>
+</Page>
